@@ -1,11 +1,9 @@
 const discord = require('discord.js');
 const client = new discord.Client();
-const config = require('./config.json');
+const config = require('./config.json'); //put your token in here
 
 client.on('ready', async () => {
-    const oneLinerJoke = require('one-liner-joke');
-    var getRandomJoke = oneLinerJoke.getRandomJoke();
-    console.log(getRandomJoke.body)
+    return ':troll:';
 });
 
 client.on('message', async (message) => {
